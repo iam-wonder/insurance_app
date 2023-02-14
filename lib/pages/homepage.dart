@@ -67,7 +67,23 @@ class _HomeState extends State<Home> {
       centerTitle: true,
       backgroundColor: Colors.teal[400],
     ),
-      // body: ,
+      body:Center(
+        child:ListTile(
+          title:Text(
+            'WELCOME TO MY INSURANCE_APP'
+                '',
+            style: TextStyle(
+                fontSize: 20,
+                fontWeight: FontWeight.bold,
+                color: Colors.grey[800]
+            ),
+
+          ) ,
+
+        )
+
+        ,
+      ) ,
     );
   }
 }
