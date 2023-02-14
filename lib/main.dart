@@ -23,6 +23,7 @@ Future<void> main() async{
       '/benefit':(context)=>const BenefitPage(),
       '/benefit/addbenefit': (context) => AddBenefit(),
     },
+    debugShowMaterialGrid: false,
   ));
 }
 
@@ -34,7 +35,7 @@ class MyApp extends StatelessWidget {
     return Provider(
           create: (_) => MyDatabase(),
 
-      child:   MaterialApp(
+      child:   const MaterialApp(
         title: 'MaterialApp',
         home: Home(),
 
